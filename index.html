@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
     <!-- Styles Css link -->
     <link rel="stylesheet" href="Styles/style.css">
 </head>
+
 <body class="poppins">
     <main class="bg-[#1E1E1EFF]  min-h-screen bg-[url(images/background.png)] bg-no-repeat bg-center ">
         <!-- section home  -->
@@ -24,16 +26,19 @@
         <section id="play-ground" class="hidden">
             <div class="flex flex-col items-center justify-center gap-7 pt-20">
                 <!-- screen -->
-                <div class="artboard artboard-horizontal phone-6 border-[20px] rounded-2xl border-[#010313CC] bg-[#FFFFFFB3]">
+                <div
+                    class="artboard artboard-horizontal phone-6 border-[20px] rounded-2xl border-[#010313CC] bg-[#FFFFFFB3]">
                     <div class="flex justify-center">
-                        <p class="font-medium text-lg text-[#FFFFFFFF] bg-[#2F2941FF] px-6 pb-3 rounded-b-xl">Don't watch keyboard  while playing...</p>
+                        <p class="font-medium text-lg text-[#FFFFFFFF] bg-[#2F2941FF] px-6 pb-3 rounded-b-xl">Don't
+                            watch keyboard while playing...</p>
                     </div>
                     <div class="flex justify-center items-center h-full">
-                        <p id="current-alphabet" class="font-semibold text-9xl text-[#010313] text-center uppercase ">Y</p>
+                        <p id="current-alphabet" class="font-semibold text-9xl text-[#010313] text-center uppercase ">Y
+                        </p>
                     </div>
                 </div>
                 <!-- keyboard -->
-                 <div>
+                <div>
                     <div class="my-1 flex w-full justify-center gap-1">
                         <kbd id="q" class="kbd">q</kbd>
                         <kbd id="w" class="kbd">w</kbd>
@@ -45,8 +50,8 @@
                         <kbd id="i" class="kbd">i</kbd>
                         <kbd id="o" class="kbd">o</kbd>
                         <kbd id="p" class="kbd">p</kbd>
-                      </div>
-                      <div class="my-1 flex w-full justify-center gap-1">
+                    </div>
+                    <div class="my-1 flex w-full justify-center gap-1">
                         <kbd id="a" class="kbd">a</kbd>
                         <kbd id="s" class="kbd">s</kbd>
                         <kbd id="d" class="kbd">d</kbd>
@@ -56,8 +61,8 @@
                         <kbd id="j" class="kbd">j</kbd>
                         <kbd id="k" class="kbd">k</kbd>
                         <kbd id="l" class="kbd">l</kbd>
-                      </div>
-                      <div class="my-1 flex w-full justify-center gap-1">
+                    </div>
+                    <div class="my-1 flex w-full justify-center gap-1">
                         <kbd id="z" class="kbd">z</kbd>
                         <kbd id="x" class="kbd">x</kbd>
                         <kbd id="c" class="kbd">c</kbd>
@@ -66,36 +71,40 @@
                         <kbd id="n" class="kbd">n</kbd>
                         <kbd id="m" class="kbd">m</kbd>
                         <kbd id="/" class="kbd">/</kbd>
-                      </div>
-                 </div>
+                    </div>
+                </div>
                 <!-- life screen -->
-                 <div class="flex justify-between w-3/4">
+                <div class="flex justify-between w-3/4">
                     <button class="btn rounded-full bg-[#894189FF] text-[#FFFFFFFF] px-8">
-                       life
-                       <img src="images/hard.svg" alt="">
-                       <span>1</span>
-                      </button>
+                        life
+                        <img src="images/hard.svg" alt="">
+                        <span id="current-life">6</span>
+                    </button>
+                    <!-- display score -->
                     <button class="btn rounded-full bg-[#360490FF] text-[#FFFFFFFF] px-8">
-                       score
-                       <img src="images/dollar.svg" alt="">
-                       <span>1</span>
-                      </button>
-                 </div>
+                        score
+                        <img src="images/dollar.svg" alt="">
+                        <span id="current-score">0</span>
+                    </button>
+                </div>
             </div>
         </section>
         <!-- final Score -->
-        <section class="score flex justify-center items-center min-h-screen hidden">
+        <section id="final-score" class=" flex justify-center items-center min-h-screen hidden">
             <div class="text-center space-y-6 p-8 bg-[#FFFFFF33] rounded-xl">
-                    <h3 class="text-[#FFFFFFFF]">
-                        <span class="font-extrabold text-6xl">Score :</span>
-                        <span class="font-medium text-6xl">14</span>
-                    </h3>
-                    <button class="btn font-semibold text-2xl text-[#010313FF] rounded-lg bg-[#FFFFFFFF]">Play Again</button>
-                    <p class="font-medium text-xl text-[#FFFFFFFF]">Practice will make you Pro</p>
+                <h4 class="text-3xl text-white">Game Over!</h4>
+                <h3 class="text-[#FFFFFFFF]">
+                    <span class="font-extrabold text-6xl">Score :</span>
+                    <span id="last-score" class="font-medium text-6xl">14</span>
+                </h3>
+                <button onclick="play ()" class="btn font-semibold text-2xl text-[#010313FF] rounded-lg bg-[#FFFFFFFF]">Play
+                    Again</button>
+                <p class="font-medium text-xl text-[#FFFFFFFF]">Practice will make you Pro</p>
             </div>
         </section>
     </main>
     <script src="script/alpha-clash.js"></script>
     <script src="script/utility.js"></script>
 </body>
+
 </html>
